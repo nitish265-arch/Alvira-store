@@ -1,12 +1,12 @@
 const products = [
-  {id:1,name:"Aqua Teardrop Bracelet",category:"bracelets",price:1699,old:3800,img:"assets/bracelet-aqua.jpg",desc:"Statement aqua-stone bracelet from the ALVIRA Raksha Bandhan edit.",badge:"55% OFF"},
-  {id:2,name:"Floral Stone Bracelet",category:"bracelets",price:1399,old:3400,img:"assets/bracelet-flower.jpg",desc:"Delicate floral stone design made for gifting.",badge:"59% OFF"},
-  {id:3,name:"Classic Gift Bracelet",category:"gifts",price:499,old:1000,img:"assets/bracelet-pink.jpg",desc:"A colourful everyday bracelet presented as an easy gifting choice.",badge:"50% OFF"},
-  {id:4,name:"Emerald Wave Bracelet",category:"bracelets",price:899,old:1499,img:"assets/bracelet-green.jpg",desc:"Elegant green-stone wave bracelet with a vintage finish.",badge:"40% OFF"},
-  {id:5,name:"Aqua Floral Bracelet",category:"bracelets",price:799,old:1299,img:"assets/bracelet-floral-green.jpg",desc:"Soft aqua floral links with a classic silver-tone finish.",badge:"38% OFF"},
-  {id:6,name:"ALVIRA Gift Box",category:"gifts",price:999,old:1499,img:"assets/gift-box.jpg",desc:"Premium ALVIRA presentation box for a memorable gift.",badge:"33% OFF"},
-  {id:7,name:"Bangle Collection",category:"bangles",price:1199,old:1799,img:"assets/bangle-mix.jpg",desc:"Colourful bangle collection presented in ALVIRA packaging.",badge:"33% OFF"},
-  {id:8,name:"Emerald Bangle Edit",category:"bangles",price:999,old:1599,img:"assets/bangle-green.jpg",desc:"Rich green and gold-toned bangles for festive styling.",badge:"38% OFF"}
+  {id:1,name:"Aqua Teardrop Bracelet",category:"bracelets",price:1699,old:3800,img:"bracelet-aqua.jpg",desc:"Statement aqua-stone bracelet from the ALVIRA Raksha Bandhan edit.",badge:"55% OFF"},
+  {id:2,name:"Floral Stone Bracelet",category:"bracelets",price:1399,old:3400,img:"bracelet-flower.jpg",desc:"Delicate floral stone design made for gifting.",badge:"59% OFF"},
+  {id:3,name:"Classic Gift Bracelet",category:"gifts",price:499,old:1000,img:"bracelet-pink.jpg",desc:"A colourful everyday bracelet presented as an easy gifting choice.",badge:"50% OFF"},
+  {id:4,name:"Emerald Wave Bracelet",category:"bracelets",price:899,old:1499,img:"bracelet-green.jpg",desc:"Elegant green-stone wave bracelet with a vintage finish.",badge:"40% OFF"},
+  {id:5,name:"Aqua Floral Bracelet",category:"bracelets",price:799,old:1299,img:"bracelet-floral-green.jpg",desc:"Soft aqua floral links with a classic silver-tone finish.",badge:"38% OFF"},
+  {id:6,name:"ALVIRA Gift Box",category:"gifts",price:999,old:1499,img:"gift-box.jpg",desc:"Premium ALVIRA presentation box for a memorable gift.",badge:"33% OFF"},
+  {id:7,name:"Bangle Collection",category:"bangles",price:1199,old:1799,img:"bangle-mix.jpg",desc:"Colourful bangle collection presented in ALVIRA packaging.",badge:"33% OFF"},
+  {id:8,name:"Emerald Bangle Edit",category:"bangles",price:999,old:1599,img:"bangle-green.jpg",desc:"Rich green and gold-toned bangles for festive styling.",badge:"38% OFF"}
 ];
 
 let cart = [];
