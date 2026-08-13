@@ -1,132 +1,117 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#6d1f50" />
-  <title>ALVIRA — Gifts • Accessories • Love</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#641e4c">
+<meta name="description" content="ALVIRA — elegant jewellery and thoughtful gifts. Raksha Bandhan special offers.">
+<title>ALVIRA — Gifts • Accessories • Love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="announcement">FREE SHIPPING ON ORDERS ABOVE ₹999 <span>•</span> COD AVAILABLE</div>
+<div class="announcement">RAKSHA BANDHAN SPECIAL <span>•</span> FREE SHIPPING ABOVE ₹999 <span>•</span> COD AVAILABLE</div>
 
-  <header class="header">
-    <button class="icon-btn menu" aria-label="Menu" onclick="toggleMenu()">☰</button>
-    <a class="logo" href="#">ALVIRA<span>♡</span></a>
-
-    <nav id="nav">
-      <a href="#shop">Shop</a>
-      <a href="#categories">Categories</a>
-      <a href="#new">New Arrivals</a>
-      <a href="#gifts">Gifts</a>
-    </nav>
-
-    <div class="header-actions">
-      <button class="icon-btn" aria-label="Search" onclick="focusSearch()">⌕</button>
-      <button class="icon-btn" aria-label="Account">♙</button>
-      <button class="icon-btn cart-btn" aria-label="Cart" onclick="openCart()">🛍 <b id="cartCount">0</b></button>
-    </div>
-  </header>
-
-  <div id="searchBar" class="searchbar">
-    <input id="searchInput" type="search" placeholder="Search bracelets, bangles, gifts..." oninput="filterProducts()" />
+<header class="header">
+  <button class="icon-btn menu" aria-label="Menu" onclick="toggleMenu()">☰</button>
+  <a class="logo" href="#">ALVIRA<span>♡</span></a>
+  <nav id="nav">
+    <a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#new">New Arrivals</a><a href="#gifts">Gifts</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" aria-label="Search" onclick="focusSearch()">⌕</button>
+    <button class="icon-btn cart-btn" aria-label="Cart" onclick="openCart()">🛍 <b id="cartCount">0</b></button>
   </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">GIFTS • ACCESSORIES • LOVE</p>
-        <h1>Little pieces.<br><em>Big moments.</em></h1>
-        <p>Elegant jewellery and thoughtful gifts, made to be remembered.</p>
-        <a class="btn" href="#shop">SHOP NOW</a>
-      </div>
-      <div class="hero-art">
-        <div class="hero-card">
-          <span>ALVIRA</span>
-          <strong>Timeless<br>Elegance</strong>
-          <small>Designed for every occasion</small>
-        </div>
-      </div>
-    </section>
+<div id="searchBar" class="searchbar"><input id="searchInput" type="search" placeholder="Search bracelets, bangles, gift sets..." oninput="filterProducts()"></div>
 
-    <section id="categories" class="section">
-      <div class="section-head">
-        <div><p class="eyebrow">EXPLORE</p><h2>Shop by category</h2></div>
-      </div>
-      <div class="categories">
-        <a href="#shop" class="category"><span>✨</span><b>Bangles</b><small>Stack & shine</small></a>
-        <a href="#shop" class="category"><span>💎</span><b>Bracelets</b><small>Made to sparkle</small></a>
-        <a href="#shop" class="category"><span>🎁</span><b>Gift Sets</b><small>Ready to gift</small></a>
-        <a href="#shop" class="category"><span>♡</span><b>Jewellery</b><small>Everyday elegance</small></a>
-      </div>
-    </section>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">RAKSHA BANDHAN • GIFT EDIT</p>
+    <h1>Little pieces.<br><em>Big moments.</em></h1>
+    <p>Elegant jewellery and thoughtful gifts, made to be remembered.</p>
+    <div class="hero-offer"><strong>UP TO 59% OFF</strong><span>Limited Raksha Bandhan offers</span></div>
+    <a class="btn" href="#shop">SHOP THE OFFER</a>
+  </div>
+  <div class="hero-art">
+    <div class="hero-card"><span>ALVIRA</span><strong>Timeless<br>Elegance</strong><small>Raksha Bandhan Gift Edit</small></div>
+  </div>
+</section>
 
-    <section id="shop" class="section products-section">
-      <div class="section-head">
-        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Best sellers</h2></div>
-        <a href="#shop">View all →</a>
-      </div>
-      <div id="products" class="products"></div>
-    </section>
+<section id="categories" class="section">
+  <div class="section-head"><div><p class="eyebrow">EXPLORE</p><h2>Shop by category</h2></div></div>
+  <div class="categories">
+    <a href="#shop" class="category" onclick="setCategory('bangles')"><span>✨</span><b>Bangles</b><small>Stack & shine</small></a>
+    <a href="#shop" class="category" onclick="setCategory('bracelets')"><span>💎</span><b>Bracelets</b><small>Made to sparkle</small></a>
+    <a href="#shop" class="category" onclick="setCategory('gifts')"><span>🎁</span><b>Gift Sets</b><small>Ready to gift</small></a>
+    <a href="#shop" class="category" onclick="setCategory('jewellery')"><span>♡</span><b>Jewellery</b><small>Everyday elegance</small></a>
+  </div>
+</section>
 
-    <section id="new" class="split-banner">
-      <div class="split-copy">
-        <p class="eyebrow">THE ALVIRA EDIT</p>
-        <h2>Made for gifting.<br>Beautiful enough to keep.</h2>
-        <p>From everyday bracelets to statement bangles, find something that feels personal.</p>
-        <a class="text-link" href="#shop">Explore the collection →</a>
-      </div>
-      <div class="split-image">
-        <img src="assets/alvira-gallery.png" alt="ALVIRA jewellery collection">
-      </div>
-    </section>
-
-    <section id="gifts" class="section gallery-section">
-      <div class="section-head">
-        <div><p class="eyebrow">FROM ALVIRA</p><h2>Gifts • Accessories • Love</h2></div>
-      </div>
-      <div class="gallery">
-        <img src="assets/alvira-gallery.png" alt="ALVIRA bangles and jewellery">
-        <img src="assets/alvira-gallery.png" alt="ALVIRA gift packaging">
-        <img src="assets/alvira-gallery.png" alt="ALVIRA bracelets">
-      </div>
-    </section>
-
-    <section class="reviews">
-      <p class="eyebrow">LOVED BY YOU</p>
-      <h2>What our customers say</h2>
-      <div class="review-grid">
-        <article><div class="stars">★★★★★</div><p>“Beautiful packaging and the bracelet looked even better in person.”</p><b>— Priya</b></article>
-        <article><div class="stars">★★★★★</div><p>“Perfect gift. Elegant, affordable and arrived safely.”</p><b>— Ananya</b></article>
-        <article><div class="stars">★★★★★</div><p>“The finishing is gorgeous. Will definitely order again.”</p><b>— Riya</b></article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div>
-      <a class="logo footer-logo" href="#">ALVIRA<span>♡</span></a>
-      <p>Gifts • Accessories • Love</p>
-    </div>
-    <div><h4>SHOP</h4><a href="#shop">Bangles</a><a href="#shop">Bracelets</a><a href="#shop">Gift Sets</a></div>
-    <div><h4>HELP</h4><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Contact</a></div>
-    <div><h4>FOLLOW</h4><a href="#">Instagram</a><a href="#">WhatsApp</a></div>
-    <small class="copyright">© 2026 ALVIRA. All rights reserved.</small>
-  </footer>
-
-  <div id="cartDrawer" class="drawer">
-    <div class="drawer-head"><h3>Your bag</h3><button onclick="closeCart()">×</button></div>
-    <div id="cartItems" class="cart-items"><p class="empty">Your bag is empty.</p></div>
-    <div class="cart-bottom">
-      <div><span>Total</span><strong id="cartTotal">₹0</strong></div>
-      <button class="btn full" onclick="checkout()">CHECKOUT</button>
+<section id="shop" class="section products-section">
+  <div class="section-head">
+    <div><p class="eyebrow">RAKSHA BANDHAN SPECIAL</p><h2>Gift-worthy favourites</h2></div>
+    <div class="filters">
+      <button class="filter active" onclick="setCategory('all')">All</button>
+      <button class="filter" onclick="setCategory('bangles')">Bangles</button>
+      <button class="filter" onclick="setCategory('bracelets')">Bracelets</button>
+      <button class="filter" onclick="setCategory('gifts')">Gifts</button>
     </div>
   </div>
-  <div id="overlay" class="overlay" onclick="closeCart()"></div>
+  <div id="products" class="products"></div>
+</section>
 
-  <script src="script.js"></script>
+<section id="new" class="offer-strip">
+  <div><p class="eyebrow">RAKSHA BANDHAN OFFER</p><h2>Give her something she can keep.</h2><p>Special prices on selected ALVIRA pieces for a limited time.</p></div>
+  <div class="offer-numbers"><div><b>₹1,699</b><span>from ₹3,800</span></div><div><b>₹1,399</b><span>from ₹3,400</span></div><div><b>₹499</b><span>from ₹1,000</span></div></div>
+</section>
+
+<section id="gifts" class="split-banner">
+  <div class="split-copy"><p class="eyebrow">THE ALVIRA EDIT</p><h2>Made for gifting.<br>Beautiful enough to keep.</h2><p>Curated jewellery, premium presentation and prices built for gifting.</p><a class="text-link" href="#shop">Explore the collection →</a></div>
+  <div class="split-image"><img src="assets/gift-box.jpg" alt="ALVIRA gift box"></div>
+</section>
+
+<section class="section gallery-section">
+  <div class="section-head"><div><p class="eyebrow">FROM ALVIRA</p><h2>Gifts • Accessories • Love</h2></div></div>
+  <div class="gallery">
+    <img src="assets/bracelet-aqua.jpg" alt="Aqua stone bracelet">
+    <img src="assets/bracelet-flower.jpg" alt="Floral bracelet">
+    <img src="assets/bracelet-green.jpg" alt="Green stone bracelet">
+  </div>
+</section>
+
+<section class="reviews">
+  <p class="eyebrow">LOVED BY YOU</p><h2>What our customers say</h2>
+  <div class="review-grid">
+    <article><div class="stars">★★★★★</div><p>“Beautiful packaging and the bracelet looked even better in person.”</p><b>— Priya</b></article>
+    <article><div class="stars">★★★★★</div><p>“Perfect gift. Elegant, affordable and arrived safely.”</p><b>— Ananya</b></article>
+    <article><div class="stars">★★★★★</div><p>“The finishing is gorgeous. Will definitely order again.”</p><b>— Riya</b></article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><a class="logo footer-logo" href="#">ALVIRA<span>♡</span></a><p>Gifts • Accessories • Love</p></div>
+  <div><h4>SHOP</h4><a href="#shop">Bangles</a><a href="#shop">Bracelets</a><a href="#shop">Gift Sets</a></div>
+  <div><h4>HELP</h4><a href="#shop">Shipping</a><a href="#shop">Returns</a><a href="#shop">Contact</a></div>
+  <div><h4>FOLLOW</h4><a href="#">Instagram</a><a href="#">WhatsApp</a></div>
+  <small class="copyright">© 2026 ALVIRA. All rights reserved.</small>
+</footer>
+
+<div id="productModal" class="modal" onclick="if(event.target===this)closeProduct()">
+  <div class="modal-card"><button class="modal-close" onclick="closeProduct()">×</button><img id="modalImg" alt=""><div class="modal-copy"><p class="eyebrow" id="modalCategory"></p><h2 id="modalName"></h2><div class="modal-price" id="modalPrice"></div><p id="modalDesc"></p><button class="btn full" id="modalAdd">ADD TO BAG</button></div></div>
+</div>
+
+<div id="cartDrawer" class="drawer">
+  <div class="drawer-head"><h3>Your bag</h3><button onclick="closeCart()">×</button></div>
+  <div id="cartItems" class="cart-items"><p class="empty">Your bag is empty.</p></div>
+  <div class="cart-bottom"><div><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn full" onclick="checkout()">ORDER / CHECKOUT</button><small class="checkout-note">Online payment can be connected after the order flow is finalized.</small></div>
+</div>
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+<script src="script.js"></script>
 </body>
 </html>
